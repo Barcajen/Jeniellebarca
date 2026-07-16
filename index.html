@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prank 😂</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ffe6e6;
+    font-family:Arial,sans-serif;
+}
+
+.box{
+    text-align:center;
+}
+
+button{
+    padding:15px 30px;
+    margin:10px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#gago{
+    background:#ff4d4d;
+    color:white;
+    transition:0.3s;
+}
+
+#hindi{
+    background:#666;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Gago ka ba? 🤣</h1>
+
+    <button id="gago">Gago Ka 😂</button>
+    <button id="hindi" onclick="palaki()">Hindi 🥰</button>
+</div>
+
+<script>
+let size = 20;
+
+function palaki(){
+    size += 10;
+    let btn = document.getElementById("gago");
+    btn.style.fontSize = size + "px";
+    btn.style.padding = (size/2) + "px " + size + "px";
+}
+</script>
+
+</body>
+</html>
